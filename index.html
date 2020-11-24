@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/dc1db9fa97.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body class="hidden">
+       <div class="centrado" id="onload">
+            <div class="lds-facebook"><div></div><div></div><div></div></div>
+        </div> 
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo2.png" alt="" id="img">
+                </div>
+
+                
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Menu</a>
+                    <a href="#" id="enlace-servicio" class="btn-header">Toppings</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Galeria</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+
+        </nav>
+        <div class="textos">
+            <h1>El postre ideal para todos</h1>
+            <h2>Conoce todos nuestros productos...</h2>
+        </div>
+
+
+    </header>
+
+    <main>
+        <section class="team contenedor" id="equipo">
+            <h3>Menu</h3>
+            <p class="after">Brownies de la mas alta calidad</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/flayer1.jpg" alt="">
+                    </div>
+                    <!-- <div class="texto-team">
+                        <h4>Miguel</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div> -->
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/flayer2.jpg" alt="">
+                    </div>
+                    <!-- <div class="texto-team">
+                        <h4>Brenda</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div> -->
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/flayer3.jpg" alt="">
+                    </div>
+                    <!-- <div class="texto-team">
+                        <h4>Lorena</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div> -->
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="servicio">
+            <div class="contenedor">
+                <h3 style="color:white">Toppings</h3>
+                <p style="color:white" class="after">Disfruta tu brownie con esta variedad de topping</p>
+                <div class="serviciosS">                    
+                    <div class="caja-servicios">
+                        <img src="img/Milkyway.png" alt="">
+                        <h4>Milkyway</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Snickers.png" alt="">
+                        <h4>Snickers</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Bombon.png" alt="">
+                        <h4>Bombon</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Coco.png" alt="">
+                        <h4>Coco</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Chocoretas.png" alt="">
+                        <h4>Chocoretas</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Chocolatines.png" alt="">
+                        <h4>Chocolatines</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Crunch.png" alt="">
+                        <h4>Crunch</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/MyM.png" alt="">
+                        <h4>M&M's</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Nuez.png" alt="">
+                        <h4>Nuez</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Oreo.png" alt="">
+                        <h4>Oreo</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Chokis.png" alt="">
+                        <h4>Chokis</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Carlos V.png" alt="">
+                        <h4>Carlos V</h4>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/Bubulubu.png" alt="">
+                        <h4>Bubulubu</h4>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="work contenedor" id="trabajo">
+            <h3>Galeria</h3>
+            <p class="after">Conoce acerca de nuestros productos</p>
+
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='naturales'>Naturales</li>
+                    <li class="filter" data-nombre='conTopping'>Con toppings</li>
+                    <li class="filter" data-nombre='decorados'>Decoraciones</li>
+                    <li class="filter" data-nombre='pasteles'>Pasteles</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work naturales">
+                    <div class="img-work">
+                        <img src="img/galeria/natural1.JPG" alt="">
+                    </div>                   
+                </div>
+                <div class="cont-work naturales">
+                    <div class="img-work">
+                        <img src="img/galeria/natural2.jpg" alt="">
+                    </div>                    
+                </div>
+                <div class="cont-work naturales">
+                    <div class="img-work">
+                        <img src="img/galeria/natural3.jpg" alt="">
+                    </div>                   
+                </div>
+
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping1.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping2.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping3.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping4.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping5.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping6.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping7.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping8.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping9.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping10.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping11.JPG" alt="">
+                    </div>                
+                </div>
+                <div class="cont-work conTopping">
+                    <div class="img-work">
+                        <img src="img/galeria/topping12.JPG" alt="">
+                    </div>                
+                </div>
+            
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada1.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada2.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada3.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada4.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada5.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada6.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada7.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada8.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada9.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada10.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada11.JPG" alt="">
+                    </div>
+                </div>
+                <div class="cont-work decorados">
+                    <div class="img-work">
+                        <img src="img/galeria/pintada12.JPG" alt="">
+                    </div>
+                </div>
+                
+                <div class="cont-work pasteles">
+                    <div class="img-work">
+                        <img src="img/galeria/pastel2.JPG" alt="">
+                    </div>
+                    <!-- <div class="textos-work">
+                        <h4>Pasteles</h4>
+                    </div> -->
+                </div>
+                <div class="cont-work pasteles">
+                    <div class="img-work">
+                        <img src="img/galeria/pastel2.JPG" alt="">
+                    </div>                    
+                </div>
+                <div class="cont-work pasteles">
+                    <div class="img-work">
+                        <img src="img/galeria/pastel3.JPG" alt="">
+                    </div>                    
+                </div>
+                <div class="cont-work pasteles">
+                    <div class="img-work">
+                        <img src="img/galeria/pastel4.JPG" alt="">
+                    </div>                    
+                </div>
+                <div class="cont-work pasteles">
+                    <div class="img-work">
+                        <img src="img/galeria/pastel5.JPG" alt="">
+                    </div>                    
+                </div>
+                <div class="cont-work pasteles">
+                    <div class="img-work">
+                        <img src="img/galeria/pastel6.JPG" alt="">
+                    </div>                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logoSombra.png" alt="">
+            </div> 
+            <div class="info">
+                <p>La calidad de nuestros productos nos distinguen del resto</p>
+            </div> 
+            <div class="iconos">               
+                    <p class="fm-socials my-3">
+                        <a href="https://www.facebook.com/TheBrownieMix" target="_BLANK" class="fm-social"><img src="img/facebook.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-gonz%C3%A1lez-mart%C3%ADnez-609001170/" target="_BLANK" class="fm-social"><img src="img/linkedin.png" alt=""></a>
+                    </p>
+            </div>
+            <p style="color:white">falta mas info de contacto.. cooming soon</p>
+            
+
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/filtro.js"></script>
+
+
+
+</body>
+
+
+
+</html>
