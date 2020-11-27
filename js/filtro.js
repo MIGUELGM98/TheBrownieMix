@@ -3,7 +3,7 @@ $(function () {
         $(this).addClass('active').siblings().removeClass('active');
         let valor = $(this).attr('data-nombre');
         if (valor == 'todos') {
-            $('.cont-work').show('1000');
+            $('.cont-work').show('2000');
         } else {
             $('.cont-work').not('.' + valor).hide('2000');
             $('.cont-work').filter('.' + valor).show('2000');
@@ -24,6 +24,13 @@ $(function () {
     });
 
     $('#enlace-inicio').on('click',function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop:0
+        },600);
+    })
+
+    $('#img-final').on('click',function(e){
         e.preventDefault();
         $('html, body').animate({
             scrollTop:0

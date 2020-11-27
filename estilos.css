@@ -79,10 +79,13 @@ header{
   width: 100%;
   height: 600px;
   background: linear-gradient(to bottom,
-  rgba(211,135,20,.664),
-  rgba(29,241,171,0.6),
-  rgba(7,109,150,.45)
+  rgba(254, 191, 177, 0.822),
+  rgba(245, 234, 234, 0.404),
+  rgba(226, 159, 157, 0.685)
   ),url(img/logoSombra.png);
+  
+
+  
 
   background-attachment: center;
   background-position: center;
@@ -100,12 +103,12 @@ nav{
 .nav1{
   background:transparent; 
   height: 80px;
-  color: #fff;
+  color: #be0a73;
 }
 .nav2{
   background:var(--fondo);
   height: 100px;
-  color: #000;
+  color: #be0a73;
 }
 
 
@@ -134,7 +137,7 @@ nav .enlaces a{
 }
 
 nav .enlaces a:hover{
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #be0a73;
   transition: 0.6s;
 }
  
@@ -156,7 +159,7 @@ nav .enlaces a:hover{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color:transparent;
   overflow: hidden;
   text-align: center;
   
@@ -164,13 +167,11 @@ nav .enlaces a:hover{
 
 .textos>h1{
   font-size: 65px;
-  font-family: "Latin Modern Roman 10";
   font-style: oblique;
 }
 .textos>h2{
   font-size: 30px;
   font-weight: 200;
-  font-family: "Latin Modern Roman 10";
   font-style: oblique;
 }
 
@@ -185,14 +186,14 @@ nav .enlaces a:hover{
 
 .contenedor h3{
   font-size: var(--titulos);
-  color: var(--color1);
+  color: #be0a73;
   margin-bottom: var(--espacios);
 }
 
 .contenedor p{
   font-size: 20px;
   font-weight: 300;
-  color: var(--color1);
+  color: #be0a73;
 }
 .topping{
   color: white;
@@ -206,8 +207,17 @@ nav .enlaces a:hover{
   margin-top: var(--espacios);
   width: 100px;
   height: 2px;
-  background:var(--color1);
+  background:#be0a73;
   margin-bottom: var(--espacios-contenido);
+}
+
+.after2::after{
+  content: '';
+  display: block;
+  margin:auto;
+  width: 500px;
+  height: 2px;
+  background:#be0a73;
 }
 
 .card{
@@ -223,10 +233,8 @@ nav .enlaces a:hover{
   height: 400px;
 }
 
-.people{
-  /* height: 80%; */
-  height: 100%;
-}
+
+
 
 .content-card img{
   width: 100%;
@@ -243,16 +251,16 @@ nav .enlaces a:hover{
 
 .about{
   background: linear-gradient(to bottom,
-  rgba(211,135,20,.664),
-  rgba(29,241,171,0.6),
-  rgba(7,109,150,.45)
+  rgba(254,191,177),
+  rgb(245, 234, 234),
+  rgb(226, 159, 157)
   );
   height: auto;
 }
 
 .serviciosS{
   display: flex;
-  color: #fff;
+  color: #be0a73;
   justify-content: space-around;
   margin:var(--espacios);
   flex-wrap: wrap;
@@ -283,20 +291,25 @@ nav .enlaces a:hover{
   margin-left: var(--espacios);
   margin-bottom: var(--espacios-contenido);
   padding: 6px 12px;
-  border: 1px solid var(--color1);
+  border: 1px solid #be0a73;
   list-style: none;
-  color: var(--color1);
+  color: #be0a73;
+  font-weight: bold;
 }
 
 .botones-work li:hover{
-  background:var(--color1);
-  color: #fff;
+  background:#f85eb3;
+  color:  #be0a73;
   cursor: pointer;
+  font-weight: bold;
+
 }
 
 .botones-work .active{
-  background:var(--color1);
-  color: #fff;
+  background:#f85eb3;
+  color:  #be0a73;
+  font-weight: bold;
+
 }
 
 .galeria-work{
@@ -318,27 +331,20 @@ nav .enlaces a:hover{
 }
 
 .img-work img{
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
+  margin-top: 25px;
   object-fit:cover;
 
 }
-/* 
-.textos-work{
-  height: 15%;  
-}
 
-.textos-work>h4{
-  line-height: 30px;
-  font-weight:200;
-} */
 
 
 footer{
   background: linear-gradient(to bottom,
-  rgba(7,109,150,.45),
-  rgba(29,241,171,0.6),
-  rgba(211,135,20,.664)
+  rgba(254,191,177,0.664),
+  rgba(245, 234, 234,0.6),
+  rgba(226, 159, 157,0.45)
   );
 }
 
@@ -353,12 +359,6 @@ footer{
 
 }
 
-.iconos{
-  display:flex;
-  margin:auto;
-  justify-content: space-around;
-  width: 100%;
-}
 
 .fab{
   font: size 100px;
@@ -367,30 +367,62 @@ footer{
   display: inline-block;
 }
 
-.iconos>img{
-  width: 25px;
-  height: 25px;
-  color: #fff;
-}
 
 footer p{
-  margin-top: var(--espacios);
+  margin-top: 5px;
 }
 
+.info{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.info-card{
+  width: 31%;
+}
+
+.info a{
+  color: #be0a73;
+  font-weight:bold;
+  font-size: 15px;  
+}
 .info p{
-  color: #fff;
-  font-weight:500;
+  color:#be0a73; 
+  font-size: 15px;
+   font-weight :bold;
+}
+.info img{
+  width: 20px;
+  height: 20px;
+}
 
-
+.developed a{
+  color:#be0a73;
+  font-size: 15px;
+  font-weight: bold;
   
 }
+.developed img{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
 
+ .piepagina{
+  background: linear-gradient(to bottom,
+  rgba(254,191,177,0.664),
+  rgba(245, 234, 234,0.6),
+  rgba(226, 159, 157,0.45)
+  );
+
+ }
+   
 
 
 
 @media screen and (max-width:700px){
   .nav2{
-    color: #fff;
+    color: #be0a73;
   }
   .icono{
     display: block;
@@ -399,11 +431,11 @@ footer p{
   .enlaces{
     position: fixed;
     top :80px;
-    background:linear-gradient(to bottom,
-    rgba(7,109,150,.45),
-    rgba(7,109,150,.45),
-    rgba(7,109,150,.45)
-    );
+    background: linear-gradient(to bottom,
+  rgba(254,191,177,0.664),
+  rgba(245, 234, 234,0.6),
+  rgba(226, 159, 157,0.45)
+  );
     left: 0;
     height: 100%;
     transition: 1s;
@@ -413,14 +445,15 @@ footer p{
   .enlaces a{
     display: block;
     width: 100%;
+    cursor: pointer;
     height: 50px;
     padding: 20px;
     text-align: center;    
-    color: #fff;
+    color: #be0a73;
   }
 
   .enlaces a:hover{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid  #be0a73;
     transition: 0.6s;
   }
 
@@ -443,21 +476,84 @@ footer p{
 
 
 @media screen and (max-width:500px){
+
+  header{
+    /*   dar al header el efecto de colores*/
+      width: 100%;
+      height: 450px;
+      background: linear-gradient(to bottom,
+      rgba(254, 191, 177, 0.822),
+      rgba(245, 234, 234, 0.404),
+      rgba(226, 159, 157, 0.685)
+      ),url(img//brownies-lunetas.jpg);
+      
+    
+      
+    
+      background-attachment: center;
+      background-position: center;
+      background-size: center;
+    }
+
+    .textos{
+      width: 100%;
+      height: 100%;
+      display: flex ;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+      overflow: hidden;
+      text-align: center;
+      font-weight: bold;
+      
+    }
+    
+    .textos>h1{
+      font-size: 65px;
+      font-style: oblique;
+    }
+    .textos>h2{
+      font-size: 30px;
+      font-weight: 200;
+      font-style: oblique;
+    }
+
+
    :root{
      --espacios-contenido:25px;
    }
 
    .content-card{
      width: 90%;
+     height: 500px;
    }
    .caja-servicios{
-     width: 90%;
-     margin-bottom: var(--margenes);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 42%;
+    margin-bottom: var(--margenes);
    }
+   
+  .caja-servicios>img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+  }
+
    .galeria-work .cont-work{
     width: 85%;
+
     
    }
+   .img-work img{
+    height: 90%;
+    width: 90%;
+    margin-top: 25px;
+    object-fit:cover;
+  
+  }
    .marca-logo{
      width: 50%;
 
@@ -472,4 +568,8 @@ footer p{
     font-weight: 300;
   }
 
+  .info-card{
+    width: 50%;
+  }
+ 
 }
