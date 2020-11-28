@@ -472,6 +472,7 @@ footer p{
 }
 
 
+
 @media screen and (max-width:500px){
 
   header{
@@ -529,7 +530,7 @@ footer p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 42%;
+    width: 35%;
     margin-bottom: var(--margenes);
    }
    
