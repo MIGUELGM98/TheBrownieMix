@@ -15,7 +15,7 @@
 }
 
 body{
-  font-family: 'open sans';
+  font-family: Monaco, monospace;
   background: var(--fondo);  
 }
 img{
@@ -143,7 +143,7 @@ nav .enlaces a:hover{
  
 .logo, .logo img{
   margin-top: 5px;
-  height: 80px;
+  height: 70px;
 }
 
 .icono{
@@ -167,12 +167,12 @@ nav .enlaces a:hover{
 
 .textos>h1{
   font-size: 65px;
-  font-style: oblique;
+ 
 }
 .textos>h2{
   font-size: 30px;
   font-weight: 200;
-  font-style: oblique;
+ 
 }
 
 .contenedor{
@@ -268,6 +268,7 @@ nav .enlaces a:hover{
 
 .caja-servicios>h4{
   margin-bottom: var(--espacios);
+  font-size: 20px;
 }
 
 /* .caja-servicios p{
@@ -429,9 +430,9 @@ footer p{
     position: fixed;
     top :80px;
     background: linear-gradient(to bottom,
-  rgba(254,191,177,0.664),
-  rgba(245, 234, 234,0.6),
-  rgba(226, 159, 157,0.45)
+  rgb(254,191,177),
+  rgba(245, 234, 234,0.9),
+  rgb(226, 159, 157)
   );
     left: 0;
     height: 100%;
@@ -445,12 +446,12 @@ footer p{
     cursor: pointer;
     height: 50px;
     padding: 20px;
-    text-align: center;    
-    color: #be0a73;
+    text-align: center;   
+    border-bottom: 3px solid  #be0a73;
+ 
   }
 
   .enlaces a:hover{
-    border-bottom: 3px solid  #be0a73;
     transition: 0.6s;
   }
 
@@ -474,23 +475,24 @@ footer p{
 
 
 @media screen and (max-width:500px){
+  
 
   header{
     /*   dar al header el efecto de colores*/
       width: 100%;
       height: 450px;
       background: linear-gradient(to bottom,
-      rgba(254, 191, 177, 0.822),
-      rgba(245, 234, 234, 0.404),
-      rgba(226, 159, 157, 0.685)
+      rgba(254, 191, 177, 0.753),
+      rgba(235, 71, 71, 0.432),
+      rgba(226, 159, 157, 0.514)
       ),url(img//brownies-lunetas.jpg);
       
     
       
-    
+    /* 
       background-attachment: center;
       background-position: center;
-      background-size: center;
+      background-size: center; */
     }
 
     .textos{
@@ -500,7 +502,7 @@ footer p{
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      color: #ffffff;
+      color: #fff;
       overflow: hidden;
       text-align: center;
       font-weight: bold;
@@ -509,12 +511,11 @@ footer p{
     
     .textos>h1{
       font-size: 65px;
-      font-style: oblique;
+      
     }
     .textos>h2{
       font-size: 30px;
-      font-weight: 200;
-      font-style: oblique;
+      
     }
 
 
