@@ -230,7 +230,7 @@ nav .enlaces a:hover{
   width: 31%;
   box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
   overflow: hidden;
-  height: 400px;
+  height: 500px;
 }
 
 
@@ -524,8 +524,8 @@ footer p{
    }
 
    .content-card{
-     width: 90%;
-     height: 400px;
+     width: 100%;
+     height: 485px;
    }
    .caja-servicios{
     display: flex;
