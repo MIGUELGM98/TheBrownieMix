@@ -463,8 +463,10 @@ footer p{
   }
 
   .content-card{
-    width: 40%;
     margin-bottom: var(--margenes);
+  
+      width: 60%;
+      height: 400px;
   }
 
   :root{
@@ -524,8 +526,8 @@ footer p{
    }
 
    .content-card{
-     width: 100%;
-     height: 485px;
+     width: 90%;
+     height: 450px;
    }
    .caja-servicios{
     display: flex;
